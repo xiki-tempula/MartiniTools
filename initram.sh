@@ -343,6 +343,7 @@ table-extension=2
 
 ; During first steps nonbonded interactions
 ; are excluded within groups membrane and protein
+cutoff-scheme = group
 energygrps=Protein Membrane Solvent
 energygrp_excl=Protein Protein Membrane Membrane
 
