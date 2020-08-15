@@ -263,7 +263,7 @@ if [[ $GMXVERSION -lt 5 ]]
 then
     CUTOFFSCHEME=""
 else
-    CUTOFFSCHEME="cutoff_scheme = group"
+    CUTOFFSCHEME="cutoff_scheme = Verlet"
 fi
 
 
@@ -343,7 +343,7 @@ table-extension=2
 
 ; During first steps nonbonded interactions
 ; are excluded within groups membrane and protein
-cutoff-scheme = group
+cutoff-scheme = Group
 energygrps=Protein Membrane Solvent
 energygrp_excl=Protein Protein Membrane Membrane
 
